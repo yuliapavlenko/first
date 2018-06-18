@@ -15,8 +15,6 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
-apply plugin: 'checkstyle'
-
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
@@ -30,19 +28,4 @@ dependencies {
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-}
-
-checkstyle {
-    toolVersion = '7.6.1'
-    checkstyleTest.enabled = false
-	configFile = rootProject.file('checkstyle/checkstyle.xml')
-}
-
-
-tasks.withType(Checkstyle) {
-	ignoreFailures = true
-	reports {
-		html.enabled = true
-		xml.enabled = true
-	}
 }
