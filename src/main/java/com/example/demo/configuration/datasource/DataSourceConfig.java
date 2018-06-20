@@ -9,7 +9,6 @@ import javax.sql.DataSource;
 
 @Configuration
 public class DataSourceConfig {
-    /** {@inheritDoc} */
     @Bean
     public DataSource dataSource() {
         EmbeddedDatabaseBuilder embeddedDatabaseBuilder = new EmbeddedDatabaseBuilder();
