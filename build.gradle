@@ -43,7 +43,7 @@ checkstyle {
 
 tasks.withType(Checkstyle) {
 	reports {
-		html{
+		xml{
 		destination "${rootProject.buildDir}/reports/checkstyle/checkstyle-result.xml"
 		}
 	}
