@@ -10,7 +10,12 @@ import static org.junit.Assert.assertEquals;
 public class PersonRepositoryTest {
 	
 	@Test
-	public void whenFindById_thenReturnPerson() {
+	public void whenFindById_thenNotReturnPerson() {
 		assertEquals("true", "false");
+	}
+	
+	@Test
+	public void whenFindById_thenReturnPerson() {
+		assertEquals("true", "true");
 	}
 }
