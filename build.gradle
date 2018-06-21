@@ -76,6 +76,9 @@ tasks.withType(Checkstyle) {
 tasks.withType(Pmd){
 	reports{
 		xml.enabled=true
+		xml{
+			destination "${rootProject.buildDir}/reports/pmd/pmd-result.xml"
+		}
 		html.enabled=true
 	}
 }
