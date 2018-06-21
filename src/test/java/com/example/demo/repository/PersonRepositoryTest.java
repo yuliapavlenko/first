@@ -11,6 +11,6 @@ public class PersonRepositoryTest {
 	
 	@Test
 	public void whenFindById_thenReturnPerson() {
-		assertEquals("true", "true");
+		assertEquals("true", "false");
 	}
 }
